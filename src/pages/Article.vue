@@ -17,19 +17,8 @@
       useMeta({
         title: 'Newsroll | ' + this.$route.params.category.toUpperCase().replaceAll('-', ' ') + ": " + this.$route.params.name.charAt(0).toUpperCase() + this.$route.params.name.slice(1).replaceAll('-', ' ')
       });
-
-      this.$watch(
-        () => this.$route.params,
-        () => {
-          if (this.$route.params.category && this.$route.params.name) {
-            document.title = 'Newsroll | ' + this.$route.params.category.toUpperCase().replaceAll('-', ' ') + ": " + this.$route.params.name.charAt(0).toUpperCase() + this.$route.params.name.slice(1).replaceAll('-', ' ')
-          }
-        },
-        { immediate: true }
-      )
     },
-
-
+    
     methods: {
       play() {
         document.getElementsByTagName("video")[0].style.setProperty("display", "initial");
