@@ -1,9 +1,9 @@
 <template>
-  <div class="article" :id="this.$route.fullPath">
+  <div class="article">
     <div class="category">{{ this.$route.params.category.toUpperCase().replaceAll('-', ' ') }}</div>
     <h1>{{ this.$route.params.name.charAt(0).toUpperCase() + this.$route.params.name.slice(1).replaceAll('-', ' ') }}</h1>
     <div class="content">
-      <video style="display:none" controls="" src="https://assets.scratch.mit.edu/f109b637e777bc2bd371ae178c06ecb8.mp4"></video>
+      <video :id="this.$route.fullPath" style="display:none" controls="" src="https://assets.scratch.mit.edu/f109b637e777bc2bd371ae178c06ecb8.mp4"></video>
       <div @click=play() class="read" id="read">Read Article</div>
     </div>
   </div>
