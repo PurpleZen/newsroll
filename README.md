@@ -1,5 +1,5 @@
-# Vue.js
+# Newsroll
 
-Vue.js is a library for building user interfaces in JavaScript. This template uses Vite to serve your app.
+Make your own outrageously titled news articles and Rickroll others >:]
 
-[Check out the official docs here](https://vuejs.org/).
+[Check it out here!](https://newsroll.vercel.app/)
