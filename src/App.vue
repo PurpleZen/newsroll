@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="page">
-    <router-view :key="$route.fullPath" />
+    <router-view :key="this.$route.fullPath" />
   </div>
 </template>
 
