@@ -1,5 +1,5 @@
 <template>
-  <div class="article" :key="this.$route.fullPath">
+  <div class="article" :id="this.$route.fullPath">
     <div class="category">{{ this.$route.params.category.toUpperCase().replaceAll('-', ' ') }}</div>
     <h1>{{ this.$route.params.name.charAt(0).toUpperCase() + this.$route.params.name.slice(1).replaceAll('-', ' ') }}</h1>
     <div class="content">
