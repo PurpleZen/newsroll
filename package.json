@@ -1,6 +1,6 @@
 {
-  "name": "VueJS-with-Vite",
-  "version": "0.0.0",
+  "name": "Newsroll",
+  "version": "1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
+    "vue-meta": "^3.0.0-alpha.10",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {

@@ -1,7 +1,8 @@
-import Home from './views/Home.vue'
-import Faq from './views/Faq.vue'
-import About from './views/About.vue'
-import NotFound from './views/404.vue'
+import Home from './pages/Home.vue'
+import Article from './pages/Article.vue'
+import Mission from './pages/Mission.vue'
+import NotFound from './pages/404.vue'
+
 
 export const routes = [
   { 
@@ -9,12 +10,12 @@ export const routes = [
     component: Home,
   },
   {
-    path: '/faq',
-    component: Faq,
+    path: '/:category/:name/',
+    component: Article,
   },
   {
-    path: '/about',
-    component: About,
+    path: '/mission/',
+    component: Mission,
   },
   { path: '/:path(.*)', component: NotFound },
 ]
