@@ -11,8 +11,8 @@
     
     <div v-if="category || post" class="article">
       <sup>PREVIEW</sup>
-      <div v-html="this.category.toUpperCase()" class="category"></div>
-      <h1 v-html="this.post"></h1>
+      <div v-text="this.category.toUpperCase()" class="category"></div>
+      <h1 v-text="this.post"></h1>
       <div class="content">
         <video style="display:none" controls="" src="https://assets.scratch.mit.edu/f109b637e777bc2bd371ae178c06ecb8.mp4"></video>
         <div @click=play() class="read" id="read">Read Article</div>
